@@ -4,7 +4,13 @@ var name = 'Tyler';
 //Create a function called isTyler that accepts name as it's only parameter.
 //If the argument you passed in is equal to 'Tyler', return true. If it's not, return false.
 
-  //Code Here
+function isTyler(name){
+  if(name == 'Tyler'){
+    return True;
+  }else{
+    return False;
+  }
+}  //Code Here
 
 //////////////////PROBLEM 2////////////////////
 
@@ -12,9 +18,10 @@ var name = 'Tyler';
 //Create a function called getName that uses prompt() to prompt the user for their name, then returns the name.
 
 
-  //Code Here
-
-
+function getName(user){
+  return prompt("Enter Name");
+}
+  console.log(user);
 //////////////////PROBLEM 3////////////////////
 
 
@@ -22,7 +29,9 @@ var name = 'Tyler';
 //Create a function called welcome that uses your getName function you created in the previous problem to get the users name,
 //then alerts "Welcome, " plus whatever the users name is.
 
-  //Code Here
+function welcome(user){
+  alert "Welcome, " + user;
+}//Code Here
 
 
 //////////////////PROBLEM 4////////////////////
@@ -32,7 +41,7 @@ var name = 'Tyler';
 
 //What is the difference between arguments and parameters?
 
-  //Answer Here
+  //Answer Here=  paramerter are what you want to use in the function and arguments are what you're trying to solve using parameters.
 
 
 //////////////////PROBLEM 5////////////////////
@@ -42,7 +51,7 @@ var name = 'Tyler';
 //What are all the falsy values in JavaScript and how do you check if something is falsy?
 
 
-  //Answer Here
+  //Answer Here = null, undefined, NaN
 
 
 
@@ -53,16 +62,19 @@ var name = 'Tyler';
 //Create a function called myName that returns your name
 
   //Code Here
-  
+function myName(){
+  var name = "Chad";
+  return name;
+}
 
 
 //Now save the function definition of myName into a new variable called newMyName
 
-  //Code Here
+var newMyName = myName("Chadd")  //Code Here
 
 //Now alert the result of invoking newMyName
 
-
+console.log(newMyName);
 
 //////////////////PROBLEM 7////////////////////
 
