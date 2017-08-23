@@ -5,12 +5,13 @@ var name = 'Tyler';
 //If the argument you passed in is equal to 'Tyler', return true. If it's not, return false.
 
 function isTyler(name){
-  if(name == 'Tyler'){
-    return True;
+  if(name === 'Tyler'){
+    return true;
   }else{
-    return False;
+    return false;
   }
-}  //Code Here
+}  
+isTyler(name);//Code Here
 
 //////////////////PROBLEM 2////////////////////
 
@@ -18,10 +19,16 @@ function isTyler(name){
 //Create a function called getName that uses prompt() to prompt the user for their name, then returns the name.
 
 
-function getName(user){
-  return prompt("Enter Name");
+function getName(){
+  var name = prompt("Enter name here!");
+  if (name === null || name === ""){
+    return "user canceled window";
+  }else{
+    return name;
+  }
 }
-  console.log(user);
+getName();
+  ;
 //////////////////PROBLEM 3////////////////////
 
 
@@ -29,9 +36,12 @@ function getName(user){
 //Create a function called welcome that uses your getName function you created in the previous problem to get the users name,
 //then alerts "Welcome, " plus whatever the users name is.
 
-function welcome(user){
-  alert "Welcome, " + user;
-}//Code Here
+
+function welcome(){
+  return alert("Welcome" + getName());
+}
+welcome();
+//Code Here
 
 
 //////////////////PROBLEM 4////////////////////
@@ -62,19 +72,17 @@ function welcome(user){
 //Create a function called myName that returns your name
 
   //Code Here
-function myName(){
-  var name = "Chad";
-  return name;
-}
+
+
 
 
 //Now save the function definition of myName into a new variable called newMyName
 
-var newMyName = myName("Chadd")  //Code Here
+ //Code Here
 
 //Now alert the result of invoking newMyName
 
-console.log(newMyName);
+
 
 //////////////////PROBLEM 7////////////////////
 
